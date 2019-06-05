@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title> EJS view test </title>
+	</head>
+	<body>
+		<h1><%= title %></h1>
+
+		<h2><%= topic %></h2>
+
+		<!-- <h3>%= Done %</h3> -->
+	<h3>
+		<%= status %>
+		<% if(status==0){ %>
+		Not Started
+		<% } else if (status ==1) { %>
+			Going on
+		<% } else { %>
+			Done 
+		<% } %>
+	</h3>
+	<h5> 
+		<%= error.code %> <%= error.msg %> </h5>
+		
+	</body>
+</html>
